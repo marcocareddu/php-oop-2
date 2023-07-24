@@ -6,18 +6,22 @@ class Product
     // Class properties !Public for testing
     public $name;
     public $price;
+    public $weight;
     public $brand;
     public $type;
     public $animal;
+    public $id;
 
     // Class construct
-    function __construct($name, $price, $brand, $type, $animal)
+    function __construct($name, $price, $weight, $brand, $type, $animal, $id)
     {
         $this->name = $name;
         $this->price = $price;
+        $this->weight = $weight;
         $this->brand = $brand;
         $this->type = $type;
         $this->setAnimal($animal);
+        $this->id = $id;
     }
 
     // Class Methods
@@ -28,6 +32,3 @@ class Product
         $this->animal = $animal;
     }
 }
-
-// Test
-$shampoo = new Product('shampoo per cani', 20, 'purina', 'Pulizia', 'dog');
