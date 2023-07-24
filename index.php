@@ -20,7 +20,19 @@ require_once __DIR__ . './data/db.php';
             <div class="pt-3">
 
                 <!-- Foreach Here -->
-                <?= $osso->name ?>
+                <?php foreach ($all_products as $product) : ?>
+
+                    <div class="card">
+                        <div class=" card-body">
+                            <h5 class="card-title"><?= $product->name ?></h5>
+                            <h6 class="card-subtitle mb-2 text-muted"><?= $product->price ?>€</h6>
+                            <p class="card-text">Marca: <?= $product->brand ?></p>
+                        </div>
+                    </div>
+
+                <?php endforeach ?>
+
+
             </div>
         </div>
     </div>
