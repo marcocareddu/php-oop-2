@@ -1,8 +1,6 @@
 <?php
 // Import Classes
-include __DIR__ . './models/Product.php';
-include __DIR__ . './models/Food.php';
-include __DIR__ . './models/Toy.php';
+require_once __DIR__ . './data/db.php';
 ?>
 
 
