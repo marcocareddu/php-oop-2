@@ -3,12 +3,12 @@
 // Create general product class
 class Product
 {
-    // Class properties
-    protected $name;
-    protected $price;
-    protected $brand;
-    protected $type;
-    protected $animal;
+    // Class properties !Public for testing
+    public $name;
+    public $price;
+    public $brand;
+    public $type;
+    public $animal;
 
     // Class construct
     function __construct($name, $price, $brand, $type, $animal)
@@ -28,3 +28,8 @@ class Product
         $this->animal = $animal;
     }
 }
+
+// Test
+$shampoo = new Product('shampoo per cani', 20, 'purina', 'Pulizia', 'dog');
+
+var_dump($shampoo);
