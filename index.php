@@ -2,6 +2,7 @@
 // Import Classes
 include __DIR__ . './models/Product.php';
 include __DIR__ . './models/Food.php';
+include __DIR__ . './models/Toy.php';
 ?>
 
 
@@ -21,7 +22,7 @@ include __DIR__ . './models/Food.php';
             <div class="pt-3">
 
                 <!-- Foreach Here -->
-                <?= $crocchette->name ?>
+                <?= $osso->name ?>
             </div>
         </div>
     </div>
