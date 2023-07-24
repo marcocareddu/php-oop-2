@@ -31,5 +31,3 @@ class Product
 
 // Test
 $shampoo = new Product('shampoo per cani', 20, 'purina', 'Pulizia', 'dog');
-
-var_dump($shampoo);
