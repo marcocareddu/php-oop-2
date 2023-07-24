@@ -1,5 +1,6 @@
 <?php
-
+// Import Classes
+include __DIR__ . './models/Product.php';
 ?>
 
 
@@ -19,6 +20,7 @@
             <div class="pt-3">
 
                 <!-- Foreach Here -->
+                <?= $shampoo->name ?>
             </div>
         </div>
     </div>
