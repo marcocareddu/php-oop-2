@@ -4,11 +4,11 @@
 class Product
 {
     // Class properties
-    private $name;
-    private $price;
-    private $brand;
-    private $type;
-    private $animal;
+    protected $name;
+    protected $price;
+    protected $brand;
+    protected $type;
+    protected $animal;
 
     // Class construct
     function __construct($name, $price, $brand, $type, $animal)
@@ -24,7 +24,7 @@ class Product
     function setAnimal($animal)
     {
         $animals = ['cat', 'dog', 'bird', 'fish'];
-        if (!in_array($this->animal, $animals)) return;
+        if (!in_array($animal, $animals)) return;
         $this->animal = $animal;
     }
 }
