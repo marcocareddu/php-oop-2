@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . './Product.php';
+include_once __DIR__ . './Product.php';
 
 // Create child class from Product
 class Food extends Product
@@ -19,11 +19,3 @@ class Food extends Product
         $this->ingredients = $ingredients;
     }
 }
-
-
-
-
-// TEST
-$crocchette = new Food('crocchette per cani', 20, 12, 'purina', 'Cibo', 'dog', 234234234, 3, 'sdsdfsdfsdf');
-
-var_dump($crocchette);

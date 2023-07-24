@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . './Product.php';
+include_once __DIR__ . './Product.php';
 
 // Create child class from Product
 class Toy extends Product
@@ -21,8 +21,3 @@ class Toy extends Product
         $this->color = $color;
     }
 }
-
-// TEST
-$osso = new Toy('Osso per cani', 20, 12, 'purina', 'Gioco', 'dog', 234234234, 'plastic', 14, 'red');
-
-var_dump($osso);
